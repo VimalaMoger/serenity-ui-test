@@ -46,15 +46,15 @@ src/test/java
     - LoginStepDefinitions.java
 -------------------------------------
 
-### Dependencies
+## Dependencies
 ```spring-boot-starter-parent/starter-test, serenity-cucumber, maven-compiler-plugin, maven-surefire-plugin, maven-failsafe-plugin```
 
-### Running the tests under Maven
+## Running the tests under Maven
 
 Maven command from cmd window
 ```
 mvn clean verify serenity:aggregate
 ```
 
-### Viewing the reports
+## Viewing the reports
 [Serenity test reports](/target/site/serenity/index.html)
