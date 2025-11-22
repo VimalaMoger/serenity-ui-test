@@ -58,4 +58,4 @@ mvn clean verify serenity:aggregate
 ![testResult](/assets/testresults.PNG)
 
 ## Viewing the reports
-[Serenity test reports](/target/site/serenity/index.html)
+[Serenity test reports](https://vimalamoger.github.io/serenity-ui-test/)
