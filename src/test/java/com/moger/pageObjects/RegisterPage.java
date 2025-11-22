@@ -8,8 +8,6 @@ import net.serenitybdd.core.pages.WebElementFacade;
 @DefaultUrl("https://book-v9.onrender.com/")
 public class RegisterPage extends PageObject {
 
-    //@FindBy(linkText = "Register here")
-           // "row//div[/span/a[@href='/users/new']")
     @FindBy(xpath = "//div[@class='row']/form/div[4]/span/a[@href='javascript:history.back()']")
     private WebElementFacade registerButtonOnLoginPage;
 
