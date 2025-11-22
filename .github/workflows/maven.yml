@@ -23,17 +23,21 @@ jobs:
         with:
           java-version: '25'
           distribution: 'adopt'
-
+          
+      # 2a. Install Chrome browser in ubuntu
+      - uses: browser-actions/setup-chrome@latest
+      - run: chrome --version
+      
       # 3. Install dependencies & run tests
       - name: Run UI tests
-        run: mvn clean verify serenity:aggregate -Dwebdriver.driver=chrome -Dchrome.switches="--headless,--disable-gpu,--window-size=1920,1080,--no-sandbox,--disable-dev-shm-usage"
+        run: mvn clean verify 
        
       # 4. Upload Serenity report as artifacts
       - name: Upload Serenity HTML report
         uses: actions/upload-artifact@v4
         with:
           name: cucumber-json-report
-          path: target/site/serenity
+          path: target/site/serenity/
 
       # 5. Hosting automation report on GitHub Pages with GitHub Actions
       - name: Deploy pages
