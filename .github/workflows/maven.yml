@@ -36,7 +36,7 @@ jobs:
       - name: Upload Serenity HTML report
         uses: actions/upload-artifact@v4
         with:
-          name: cucumber-json-report
+          name: serenity-html-report
           path: target/site/serenity/
 
       # 5. Hosting automation report on GitHub Pages with GitHub Actions
